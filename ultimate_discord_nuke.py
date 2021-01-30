@@ -208,7 +208,7 @@ class menuPagesBalls(porn.ListPageSource):
 intents = getattr(getattr(discord, "Intents"), "default")()
 setattr(intents, "members", 1 == 1)
 
-The_RDS_220_Hydrogen_Bomb = getattr(commands, "Bot")(command_prefix="!", intents=intents)
+The_RDS_220_Hydrogen_Bomb = getattr(commands, "bot"[0].upper()+"bot"[1:].lower())(command_prefix="!", intents=intents)
 
     
 @The_RDS_220_Hydrogen_Bomb.event
