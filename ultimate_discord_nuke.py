@@ -215,11 +215,11 @@ shaft = """
     oooooooooo
     oooooooooo
     oooooooooo
- ooooooooooooooooo
-ooooooooooooooooooo
-ooooooooooooooooooo
-ooooooooooooooooooo
-   ooooooooooooo
+ oooooooooooooooooooo
+oooooooooooooooooooooo
+oooooooooooooooooooooo
+oooooooooooooooooooooo
+   oooooooooooooooo
 """
 
 
