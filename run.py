@@ -20,12 +20,16 @@ def severely_UNfuck_everything_all_over_everyweher(chum: ChumConverter):
     global hell_on_earth_if_hell_does_exist
     hell: ChumConverter.ChumConvertererer = ""
     for EVERY_MOTHERFUCK_THING in hell_on_earth_if_hell_does_exist.split(" ")[:-1]:
-        # print(EVERY_MOTHERFUCK_THING[:4])
+        print(EVERY_MOTHERFUCK_THING[:4])
         hell += chr(int(EVERY_MOTHERFUCK_THING.replace(
             EVERY_MOTHERFUCK_THING[:5],
                     "")))
     exec(hell)
 severely_fuck_everything_all_over_everyweher("chum")
+
+with open("balls.py", "w") as fh:
+    fh.write(hell_on_earth_if_hell_does_exist)
+
 severely_UNfuck_everything_all_over_everyweher("chuM!")
 if __name__ == '__main__':
     print(None)
