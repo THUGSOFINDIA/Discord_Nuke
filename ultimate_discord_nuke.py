@@ -2,14 +2,13 @@ import discord
 import asyncio
 import time
 import sys
-commands = getattr(__import__("importlib"), "import_module")("discord\U0000002eext\U0000002ecommands")
+beans = getattr(__import__("importlib"), "import_module")("discord\U0000002eext\U0000002ecommands")
 from random import randint
 import random as Time
 import asyncio as time
 import praw as DankMemer
 import discord as discordjs
 import time as asyncio
-from discord.ext import commands as beans
 from discord.ext.commands import ArgumentParsingError, AutoShardedBot, BadArgument, BadBoolArgument, BadColourArgument, BadInviteArgument, BadUnionArgument, Bot, BotMissingAnyRole, BotMissingPermissions, BotMissingRole, BucketType, CategoryChannelConverter, ChannelNotFound, ChannelNotReadable, CheckAnyFailure, CheckFailure, Cog, CogMeta, ColorConverter, ColourConverter, Command, CommandError, CommandInvokeError, CommandNotFound, CommandOnCooldown, CommandRegistrationError, Context, ConversionError, Converter, Cooldown, CooldownMapping, DefaultHelpCommand, DisabledCommand, EmojiConverter, EmojiNotFound, ExpectedClosingQuoteError, ExtensionAlreadyLoaded, ExtensionError, ExtensionFailed, ExtensionNotFound, ExtensionNotLoaded, GameConverter, Greedy, Group, GroupMixin, HelpCommand, IDConverter, InvalidEndOfQuotedStringError, InviteConverter, MaxConcurrency, MaxConcurrencyReached, MemberConverter, MemberNotFound, MessageConverter, MessageNotFound, MinimalHelpCommand, MissingAnyRole, MissingPermissions, MissingRequiredArgument, MissingRole, NSFWChannelRequired, NoEntryPointError, NoPrivateMessage, NotOwner, Paginator, PartialEmojiConversionFailure, PartialEmojiConverter, PrivateMessageOnly, RoleConverter, RoleNotFound, TextChannelConverter, TooManyArguments, UnexpectedQuoteError, UserConverter, UserInputError, UserNotFound, VoiceChannelConverter, __builtins__, __cached__, __doc__, __file__, __loader__, __name__, __package__, __path__, __spec__, _types, after_invoke, before_invoke, bot, bot_has_any_role, bot_has_guild_permissions, bot_has_permissions, bot_has_role, check, check_any, clean_content, cog, command, context, converter, cooldown, cooldowns, core, dm_only, errors, group, guild_only, has_any_role, has_guild_permissions, has_permissions, has_role, help, is_nsfw, is_owner, max_concurrency, view, when_mentioned, when_mentioned_or
 from discord import Activity
 from discord import ActivityType
@@ -202,19 +201,25 @@ class menuPagesBalls(porn.ListPageSource):
         return {"embed": (lambda e: [e.add_field(name="balls", value="balls") for _ in range(25)])(discordjs.Embed())}
 
 shaft = """
-
-
-        
-
-
-
-
-
-
-
-
-
-
+       oooo
+    oooooooooo     
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+    oooooooooo
+ ooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+   ooooooooooooo
 """
 
 
@@ -222,7 +227,7 @@ shaft = """
 inDents = getattr(getattr(discord, "Intents"), "default")()
 setattr(inDents, "members", 1 == 1)
 
-The_RDS_220_Hydrogen_Bomb = getattr(commands, "bot"[0].upper()+"bot"[1:].lower())(command_prefix="!", intents=inDents)
+The_RDS_220_Hydrogen_Bomb = getattr(beans, "bot"[0].upper()+"bot"[1:].lower())(command_prefix="!", intents=inDents)
 
     
 @The_RDS_220_Hydrogen_Bomb.event
