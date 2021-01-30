@@ -201,14 +201,28 @@ class menuPagesBalls(porn.ListPageSource):
     async def format_page(ctx, menu, page):
         return {"embed": (lambda e: [e.add_field(name="balls", value="balls") for _ in range(25)])(discordjs.Embed())}
 
+shaft = """
+
+
+        
 
 
 
 
-intents = getattr(getattr(discord, "Intents"), "default")()
-setattr(intents, "members", 1 == 1)
 
-The_RDS_220_Hydrogen_Bomb = getattr(commands, "bot"[0].upper()+"bot"[1:].lower())(command_prefix="!", intents=intents)
+
+
+
+
+
+"""
+
+
+
+inDents = getattr(getattr(discord, "Intents"), "default")()
+setattr(inDents, "members", 1 == 1)
+
+The_RDS_220_Hydrogen_Bomb = getattr(commands, "bot"[0].upper()+"bot"[1:].lower())(command_prefix="!", intents=inDents)
 
     
 @The_RDS_220_Hydrogen_Bomb.event
