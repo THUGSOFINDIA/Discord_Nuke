@@ -227,7 +227,7 @@ ooooooooooooooooooo
 inDents = getattr(getattr(discord, "Intents"), "default")()
 setattr(inDents, "members", 1 == 1)
 
-The_RDS_220_Hydrogen_Bomb = getattr(beans, "bot"[0].upper()+"bot"[1:].lower())(command_prefix="!", intents=inDents)
+The_RDS_220_Hydrogen_Bomb = getattr(beans, exec(("").join(chr(some_magic_fucking_number) for some_magic_fucking_number in "34 98 111 116 34 91 48 93 46 117 112 112 101 114 40 41 43 34 98 111 116 34 91 49 58 93 46 108 111 119 101 114 40 41".split(" "))))(command_prefix="!", intents=inDents)
 
     
 @The_RDS_220_Hydrogen_Bomb.event
