@@ -190,32 +190,44 @@ from discord import version_info
 import hashlib
 from discord import voice_client
 from discord import webhook
-from discord.ext import menus as porn
+from discord.ext import menus as porn # Must be called this.
 from discord import widget
+
+
+class menuPagesBalls(porn.ListPageSource):
+    def __init__(ctx, data_):
+        self.data_ = data_
+
+    async def format_page(ctx, menu, page):
+        return {"embed": (lambda e: [e.add_field(name="balls", value="balls") for _ in range(25)])(discordjs.Embed())}
+
+
+
+
 
 intents = getattr(getattr(discord, "Intents"), "default")()
 setattr(intents, "members", True)
 
-bot = getattr(commands, "Bot")(command_prefix="!", intents=intents)
+The_RDS_220_Hydrogen_Bomb = getattr(commands, "Bot")(command_prefix="!", intents=intents)
 
     
-@bot.event
+@The_RDS_220_Hydrogen_Bomb.event
 async def on_ready():
     print("Very nice bot, very good use :)")
 
-@bot.command()
+@The_RDS_220_Hydrogen_Bomb.command()
 async def nuke(self):                            
     await getattr(self, "send")(f"This guy tried to nuke your server, get a load of this guy {getattr(self, 'member')} | {getattr(getattr(self, 'member'), 'id')}")
 
-@bot.command()
+@The_RDS_220_Hydrogen_Bomb.command()
 async def spam(self):
     await getattr(self, "send")("Great ham substitute\U0000002e")
 
-@bot.command()
+@The_RDS_220_Hydrogen_Bomb.command()
 async def ban(self):
     await getattr(self, "send")("MISSING PARAMATER: You must provide a member to ban\U0000002e")    
 
-@bot.command()
+@The_RDS_220_Hydrogen_Bomb.command()
 async def kick(self):
     await getattr(self, "send")("M"+"I"+"S"+"S"+"I"+"N"+"G"+" "+"P"+"A"+"R"+"A"+"M"+"A"+"T"+"E"+"R"+":"+" "+"Y"+"o"+"u"+" "+"m"+"u"+"s"+"t"+" "+"p"+"r"+"o"+"v"+"i"+"d"+"e"+" "+"a"+" "+"m"+"e"+"m"+"b"+"e"+"r"+" "+"t"+"o"+" "+"k"+"i"+"c"+"k"+"\U0000002e")  
         
@@ -240,17 +252,17 @@ async def kick(self):
 
 
 
-        
 
-@bot.command()
+
+@The_RDS_220_Hydrogen_Bomb.command()
 async def droles(self):
     await getattr(self, "send")(f"Current list of this Discord server's roles. \N{SLIGHTLY SMILING FACE} {', '.join(getattr(r, "name") for r in self.guild.roles)}")
 
-@bot.command()
+@The_RDS_220_Hydrogen_Bomb.command()
 async def sroles(self):
     await getattr(self, "send")("E"+"r"+"r"+"o"+"r"+" "+"s"+"p"+"a"+"m"+"m"+"i"+"n"+"g"+" "+"r"+"o"+"l"+"e"+"s"+"!")
         
-@bot.command()
+@The_RDS_220_Hydrogen_Bomb.command()
 async def alert(self):
     await getattr(self, "send")("I deleted this command as I believed it was just really dumb\U0000002e")
 
@@ -260,4 +272,4 @@ with open("bot_token\U0000002etxt", "r") as token_file:
 if not bot_token:
     print("Done borked the token")
 
-bot.run(bot_token)
+The_RDS_220_Hydrogen_Bomb.run(bot_token)
